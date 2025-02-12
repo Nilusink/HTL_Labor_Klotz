@@ -1,0 +1,1 @@
+scp -P 2222 -r ./* nilusink@localhost:project/; waypipe -c lz4=9 ssh -p 2222 nilusink@localhost python3 project/visu.py #"python3 project/insert.py; python3 project/visu.py"

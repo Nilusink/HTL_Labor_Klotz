@@ -1,2 +1,5 @@
 mysql-connector-python~=9.2.0
 SQLAlchemy~=2.0.37
+PyMySQL~=1.1.1
+plotly~=6.0.0
+dash~=2.18.2
