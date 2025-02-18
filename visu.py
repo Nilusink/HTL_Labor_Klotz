@@ -173,10 +173,10 @@ def main() -> None:
     )
 
     # Age graph
-    ages = [
-        calculate_age(birthday)
-        for (birthday, ) in birthdays if birthday is not None
-    ]
+    ages = []
+    for (birthday,) in birthdays:
+        if birthday is not None:
+            ages.append(calculate_age(birthday))
 
     ## calculate below 30, 30-60 and 60+
     below_30 = len([age for age in ages if age < 30])
